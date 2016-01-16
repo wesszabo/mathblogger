@@ -28,7 +28,6 @@
   background-color: FloralWhite;
   font-size: x-large;
 }
-
 .ExerciseBox {
   margin-left:auto;
   margin-right:auto;
@@ -40,7 +39,6 @@
   font-style: normal;
   font-size: large;
 }
-
 .LemmaBox {
   margin-left:auto;
   margin-right:auto;
@@ -88,3 +86,20 @@
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
+/*rounded corners of box*/
+.corner1 {
+  border: 1px solid red;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  padding: 5px; 
+  width: auto;
+  height: auto; 
+}
+/*
+ *  Start with the steps being hidden
+ */
+#Step1, #Step2, #Step3, #Step4, #Step5, #Step6, #Step7, #Step8, #Step9, #Step10, #Step11, #Step12, #Step13, #Step14, {
+  visibility: hidden;
+}
+/*
