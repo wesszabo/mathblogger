@@ -1,0 +1,90 @@
+.TheoremBox {
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  padding:10px;
+  border:2px solid gray;
+  /*margin:2px;*/
+  background-color: SkyBlue;
+  font-style: italic;
+  font-size: large;
+}
+.ProofBox {
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  padding:10px;
+  border:2px solid gray;
+  /*margin:2px;*/
+  background-color: PapayaWhip;
+  font-style: normal;
+  font-size: large;
+}
+.thm  {
+  text-align:left;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: FloralWhite;
+  font-size: x-large;
+}
+
+.ExerciseBox {
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  padding:10px;
+  border:2px solid gray;
+  /*margin:2px;*/
+  background-color: LightGreen;
+  font-style: normal;
+  font-size: large;
+}
+
+.LemmaBox {
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  padding:10px;
+  border:2px solid gray;
+  /*margin:2px;*/
+  background-color: DarkKhaki;
+  font-style: italic;
+  font-size: large;
+}
+.DefinitionBox {
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  padding:10px;
+  border:2px solid gray;
+  /*margin:2px;*/
+  background-color: Moccasin;
+  font-style: normal;
+  font-size: large;
+}
+.LargeFontBox {
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  padding:10px;
+  border:2px solid gray;
+  /*margin:2px;*/
+  background-color: White;
+  font-style: normal;
+  font-size: large;
+}
+.LargeFont {
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  font-size: large;
+}
+.button {
+  font-size: x-large;
+  padding: 3px;
+  margin: 0;
+  border:2px solid black;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
