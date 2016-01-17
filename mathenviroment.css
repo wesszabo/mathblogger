@@ -102,4 +102,7 @@
 #Step1, #Step2, #Step3, #Step4, #Step5, #Step6, #Step7, #Step8, #Step9, #Step10, #Step11, #Step12, #Step13, #Step14, #Step15, #Step16 {
   visibility: hidden;
 }
+#SStep1, #SStep2, #SStep3, #SStep4, #SStep5, #SStep6, #SStep7, #SStep8, #SStep9, #SStep10, #SStep11, #SStep12, #SStep13, #SStep14, #SStep15, #SStep16 {
+  visibility: hidden;
+}
 /*
