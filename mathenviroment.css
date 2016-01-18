@@ -1,3 +1,10 @@
+.pbox {
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
+  padding: 0px;
+  font-size: large;
+}
 .TheoremBox {
   margin-left:auto;
   margin-right:auto;
