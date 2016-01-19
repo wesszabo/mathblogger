@@ -92,6 +92,9 @@
   border:2px solid black;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  background-color: buttonface;
+  text-decoration: none;
+  width: auto;
 }
 /*rounded corners of box*/
 .corner1 {
