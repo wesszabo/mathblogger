@@ -106,7 +106,19 @@
   height: auto; 
 }
 /*
- *  Start with the steps being hidden
+/* show-hide styling
+*/
+#slidingDiv1, #slidingDiv_2 #slidingDiv3, #slidingDiv_4 #slidingDiv5, #slidingDiv_6 #slidingDiv7, #slidingDiv_8 #slidingDiv9, #slidingDiv_10 #slidingDiv11, #slidingDiv_12 {
+	height:auto;
+	background-color: #99CCFF;
+	padding:20px;
+	margin-top:5px;
+	border-bottom:5px solid #3399FF;
+	display:none;
+}
+
+/*
+ *  Start with the steps being hidden in math eq
  */
 #Step1, #Step2, #Step3, #Step4, #Step5, #Step6, #Step7, #Step8, #Step9, #Step10, #Step11, #Step12, #Step13, #Step14, #Step15, #Step16 {
   visibility: hidden;
