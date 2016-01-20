@@ -1,6 +1,7 @@
 // Copyright (c) 2015 The MathJax Consortium 
 //
 // Davide P. Cervone 19 Jan 2016
+// https://groups.google.com/forum/#!topic/mathjax-users/RBWy7xB1c3g
 //
 <script type="text/javascript">
 DynamicEquation = {
