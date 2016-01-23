@@ -1,0 +1,8 @@
+body {
+cursor: url(https://drive.google.com/file/d/0B_s1BCdqI_GRMUFINTRablVMRmc/view?usp=sharing),progress;
+}
+
+a:hover {
+cursor: url(https://drive.google.com/file/d/0B_s1BCdqI_GRN1I3U1JIeUpyMjA/view?usp=sharing),default;
+color: #f60;
+}
