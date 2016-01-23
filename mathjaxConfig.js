@@ -7,6 +7,7 @@
  MathJax.Hub.Config({
 displayAlign: "left",
     displayIndent: "2em",
+    HTML: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],
     TeX: {
       Macros: {
         Step: ["\\cssId{Step#1}{\\style{visibility:hidden}{{}#2}}",2]
@@ -15,7 +16,7 @@ displayAlign: "left",
 	extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
 	equationNumbers: { autoNumber: "AMS" }
     },
-    extensions: ["tex2jax.js"],
+    extensions: ["tex2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js"],
     jax: ["input/TeX", "output/HTML-CSS"],
     tex2jax: {
       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
