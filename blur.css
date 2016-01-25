@@ -107,7 +107,7 @@
 /*The currently hovered item will be slightly enlarged and adjust the box shadow.*/ 
 /* We’ll also set a high z.index to guarantee that the item will always be on top of the other ones when we hover over it:*/
 .ib-container article.active{
-	transform: scale(1.05);
+	transform: scale(1.5);
 	box-shadow: 
 		0px 0px 0px 10px rgba(255,255,255,1), 
 		1px 11px 15px 10px rgba(0,0,0,0.4);
