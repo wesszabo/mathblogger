@@ -1,0 +1,122 @@
+/* Mary Lou */
+/*  http://tympanus.net/codrops/2011/12/14/item-blur-effect-with-css3-and-jquery */
+/* 2011/12/14 */
+
+/*The main container will be of fixed width and centered:*/
+.ib-container{
+	position: relative;
+	width: 800px;
+	margin: 30px auto;
+}
+/*Let’s clear the floats (out articles will be floating) with the help of the :before and :after pseudo elements:*/
+.ib-container:before,
+.ib-container:after {
+    content:"";
+    display:table;
+}
+.ib-container:after {
+    clear:both;
+}
+/*Now, let’s style the article items. We’ll make them float and add two box shadows, */
+/*of which the white one will have a large spread distance. Also, we’ll add the transition
+/*for three properties: opacity, transform (we want to scale it) and box-shadow:*/
+.ib-container article{
+	width: 140px;
+	height: 220px;
+	background: #fff;
+	cursor: pointer;
+	float: left;
+	border: 10px solid #fff;
+	text-align: left;
+	text-transform: none;
+	margin: 15px;
+	z-index: 1;
+	box-shadow: 
+		0px 0px 0px 10px rgba(255,255,255,1), 
+		1px 1px 3px 10px rgba(0,0,0,0.2);
+	transition: 
+		opacity 0.4s linear, 
+		transform 0.4s ease-in-out, 
+		box-shadow 0.4s ease-in-out;
+}
+/*For Webkit browsers we’ll also add*/
+/*-webkit-backface-visibility: hidden*/
+/*to avoid a short flicker. (You can remove this if you prefer to have a crisp looking text, though).*/
+/*Let’s style the text elements and create some nice typography.*/ 
+/* The color and the text-shadow of each element will be matching:*/
+.ib-container h3 a{
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1);
+	text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+	opacity: 0.8;
+}
+.ib-container article header span{
+	font-size: 10px;
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	padding: 10px 0;
+	display: block;
+	color: rgba(255, 210, 82, 1);
+	text-shadow: 0px 0px 0px rgba(255, 210, 82, 1);
+	text-transform: uppercase;
+	opacity: 0.8;
+}
+.ib-container article p{
+	font-family: Verdana, sans-serif;
+	font-size: 10px;
+	line-height: 13px;
+	color: rgba(51, 51, 51, 1);
+	text-shadow: 0px 0px 0px rgba(51, 51, 51, 1);
+	opacity: 0.8;
+}
+/*And now we’ll add the transition to all three.*/ 
+/* Again, we’ll have three properties: opacity, text-shadow and color:*/
+.ib-container h3 a,
+.ib-container article header span,
+.ib-container article p{
+	transition: 
+		opacity 0.2s linear, 
+		text-shadow 0.5s ease-in-out, 
+		color 0.5s ease-in-out;
+}
+/*The blur class will be applied to all the siblings of the currently hovered item.*/ 
+/* We want to scale them down a bit and add a big white box shadow, to make the box look blurry.*/ 
+/* We’ll also decrease the opacity a bit:*/
+.ib-container article.blur{
+	box-shadow: 0px 0px 20px 10px rgba(255,255,255,1);
+	transform: scale(0.9);
+	opacity: 0.7;
+}
+/*In order to make the text elements look blurry, we’ll make the color transparent by*/ 
+/* setting the opacity of the rgba value to 0, and we’ll enlarge the text-shadow blur distance:*/
+.ib-container article.blur h3 a{
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+	color: rgba(0, 0, 0, 0);
+	opacity: 0.5;
+}
+.ib-container article.blur header span{
+	text-shadow: 0px 0px 10px rgba(255, 210, 82, 0.9);
+	color: rgba(255, 210, 82, 0);
+	opacity: 0.5;
+}
+.ib-container article.blur  p{
+	text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.9);
+	color: rgba(51, 51, 51, 0);
+	opacity: 0.5;
+}
+/*The currently hovered item will be slightly enlarged and adjust the box shadow.*/ 
+/* We’ll also set a high z.index to guarantee that the item will always be on top of the other ones when we hover over it:*/
+.ib-container article.active{
+	transform: scale(1.05);
+	box-shadow: 
+		0px 0px 0px 10px rgba(255,255,255,1), 
+		1px 11px 15px 10px rgba(0,0,0,0.4);
+	z-index: 100;	
+	opacity: 1;
+}
+/*Last, but not least, we’ll set the opacity of the text elements to 1:*/
+.ib-container article.active h3 a,
+.ib-container article.active header span,
+.ib-container article.active p{
+	opacity; 1;
+}
