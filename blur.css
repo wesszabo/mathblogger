@@ -83,10 +83,10 @@
 /* We want to scale them down a bit and add a big white box shadow, to make the box look blurry.*/ 
 /* We’ll also decrease the opacity a bit:*/
 .ib-container article.blur{
-	margin: 45px 0;
+	margin: 55px 0;
 	box-shadow: 0px 0px 20px 10px rgba(255,255,255,1);
 	transform: scale(0.75);
-	opacity: 0.5;
+	opacity: 0.3;
 }
 /*In order to make the text elements look blurry, we’ll make the color transparent by*/ 
 /* setting the opacity of the rgba value to 0, and we’ll enlarge the text-shadow blur distance:*/
