@@ -107,6 +107,25 @@
   height: auto; 
 }
 /*
+/* Image with Caption
+*/
+div.figure {
+  float: left;
+  width: 50%;
+  border: 1px black solid;
+  padding: 5px;
+}
+div.figure p {
+  text-align: left;
+  font-style: italic;
+  text-indent: 0;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+img.scaled {
+  width: 100%;
+}
+/*
 /* show-hide styling
 */
 #slidingDiv_1, #slidingDiv_2, #slidingDiv3, #slidingDiv_4, #slidingDiv_5, #slidingDiv_6, #slidingDiv_7, #slidingDiv_8, #slidingDiv_9, #slidingDiv_10, #slidingDiv_11, #slidingDiv_12 {
