@@ -110,10 +110,15 @@
 /* Image with Caption
 */
 div.figure {
-  float: left;
-  width: 50%;
+  width: 49%;
   border: 1px black solid;
   padding: 5px;
+}
+#left {
+	float: left;
+}
+#right {
+	float: right;
 }
 div.figure p {
   text-align: left;
