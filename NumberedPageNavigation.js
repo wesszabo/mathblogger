@@ -1,5 +1,6 @@
 /* 
 Page Navigation Widget For Blogger with Colorful Styles
+http://24work.blogspot.com/2012/01/numbered-page-navigation-for-blogger.html
 By Way2blogging
 Url:http://www.way2blogging.org/
 */
