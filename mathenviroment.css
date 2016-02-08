@@ -130,6 +130,12 @@ div.figure p {
 img.scaled {
   width: 100%;
 }
+.jump-link {
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  font-size: large;	
+}
 /*
 /* show-hide styling
 */
