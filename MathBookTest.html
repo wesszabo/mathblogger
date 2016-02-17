@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2016-01-26T13:20:36-08:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AATA Fermat's and Euler's Theorems</title>
+    <meta name="Keywords" content="Authored in MathBook XML">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>
+    $(function () {
+      // Make *any* div with class 'sage-compute' an executable Sage cell
+      sagecell.makeSagecell({inputLocation: 'div.sage-compute',
+                             linked: true,
+                             evalButtonText: 'Evaluate'});
+    });
+    $(function () {
+      // Make *any* div with class 'sage-display' a visible, uneditable Sage cell
+      sagecell.makeSagecell({inputLocation: 'div.sage-display',
+                             editor: 'codemirror-readonly',
+                             hide: ['evalButton', 'editorToggle', 'language']});
+    });
+    </script><script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+    <link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+    <link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="mathbook-book has-toc has-sidebar-left">
+    <div style="display:none;">\(\newcommand{\identity}{\mathrm{id}}
+      \newcommand{\notdivide}{{\not{\mid}}}
+      \newcommand{\notsubset}{\not\subset}
+      \newcommand{\lcm}{\operatorname{lcm}}
+      \newcommand{\gf}{\operatorname{GF}}
+      \newcommand{\inn}{\operatorname{Inn}}
+      \newcommand{\aut}{\operatorname{Aut}}
+      \newcommand{\Hom}{\operatorname{Hom}}
+      \newcommand{\cis}{\operatorname{cis}}
+      \newcommand{\chr}{\operatorname{char}}
+      \newcommand{\Null}{\operatorname{Null}}
+      \newcommand{\lt}{ &lt; }
+      \newcommand{\gt}{ &gt; }
+      \newcommand{\amp}{ &amp; }\)</div>
+    <header id="masthead"><div class="banner"><div class="container">
+      <a id="logo-link" href="http://abstract.pugetsound.edu" target="_blank"><img src="images/cover_aata_2014.png"></a><div class="title-container">
+      <h1 class="heading">
+        <span class="title">Abstract Algebra</span><span class="subtitle">Theory and Applications</span>
+      </h1>
+      <p class="byline">Thomas W. Judson</p>
+      </div>
+      </div></div>
+      <nav id="primary-navbar"><div class="container">
+        <div class="navbar-top-buttons">
+          <button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+          <a class="previous-button toolbar-item button" href="section-lagranges-theorem.html">Previous</a><a class="up-button button toolbar-item" href="cosets.html">Up</a><a class="next-button button toolbar-item" href="exercises-cosets.html">Next</a>
+          </div>
+          <button class="sidebar-right-toggle-button button active">Annotations</button>
+        </div>
+        <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+          <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-lagranges-theorem.html">Previous</a><a class="up-button button toolbar-item" href="cosets.html">Up</a><a class="next-button button toolbar-item" href="exercises-cosets.html">Next</a>
+        </div>
+        </div></nav></header><div class="page">
+    <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+      <nav id="toc"><h2 class="link"><a href="index.html"><span class="title">Front Matter</span></a></h2>
+        <ul>
+          <li><a href="colophon-1.html">Colophon</a></li>
+          <li><a href="acknowledgement-1.html">Acknowledgements</a></li>
+          <li><a href="preface-1.html">Preface</a></li>
+        </ul>
+        <h2 class="link"><a href="sets.html"><span class="codenumber">1</span><span class="title">Preliminaries</span></a></h2>
+        <ul>
+          <li><a href="section-note-on-proofs.html">A Short Note on Proofs</a></li>
+          <li><a href="section-sets-and-equivalence-relations.html">Sets and Equivalence Relations</a></li>
+          <li><a href="exercises-sets.html">Exercises</a></li>
+          <li><a href="references-1.html">References and Suggested Readings</a></li>
+          <li><a href="sets-sage.html">Sage</a></li>
+          <li><a href="sets-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="integers.html"><span class="codenumber">2</span><span class="title">The Integers</span></a></h2>
+        <ul>
+          <li><a href="section-math-induction.html">Mathematical Induction</a></li>
+          <li><a href="section-division-algorithm.html">The Division Algorithm</a></li>
+          <li><a href="exercises-integers.html">Exercises</a></li>
+          <li><a href="exercises-4.html">Programming Exercises</a></li>
+          <li><a href="references-2.html">References and Suggested Readings</a></li>
+          <li><a href="integers-sage.html">Sage</a></li>
+          <li><a href="integers-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="groups.html"><span class="codenumber">3</span><span class="title">Groups</span></a></h2>
+        <ul>
+          <li><a href="section-mod-n-sym.html">Integer Equivalence Classes and Symmetries</a></li>
+          <li><a href="section-groups-define.html">Definitions and Examples</a></li>
+          <li><a href="section-subgroups.html">Subgroups</a></li>
+          <li><a href="exercises-groups.html">Exercises</a></li>
+          <li><a href="exercises-7.html">Additional Exercises: Detecting Errors</a></li>
+          <li><a href="references-3.html">References and Suggested Readings</a></li>
+          <li><a href="groups-sage.html">Sage</a></li>
+          <li><a href="groups-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="cyclic.html"><span class="codenumber">4</span><span class="title">Cyclic Groups</span></a></h2>
+        <ul>
+          <li><a href="section-cyclic-subgroups.html">Cyclic Subgroups</a></li>
+          <li><a href="section-mult-group-c.html">Multiplicative Group of Complex Numbers</a></li>
+          <li><a href="section-method-of-repeated-squares.html">The Method of Repeated Squares</a></li>
+          <li><a href="exercises-cyclic.html">Exercises</a></li>
+          <li><a href="exercises-10.html">Programming Exercises</a></li>
+          <li><a href="references-4.html">References and Suggested Readings</a></li>
+          <li><a href="cyclic-sage.html">Sage</a></li>
+          <li><a href="cyclic-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="permute.html"><span class="codenumber">5</span><span class="title">Permutation Groups</span></a></h2>
+        <ul>
+          <li><a href="section-permutation-definitions.html">Definitions and Notation</a></li>
+          <li><a href="section-dihedral-groups.html">Dihedral Groups</a></li>
+          <li><a href="exercises-permute.html">Exercises</a></li>
+          <li><a href="permute-sage.html">Sage</a></li>
+          <li><a href="permute-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link active"><a href="cosets.html"><span class="codenumber">6</span><span class="title">Cosets and Lagrange's Theorem</span></a></h2>
+        <ul>
+          <li><a href="section-cosets.html">Cosets</a></li>
+          <li><a href="section-lagranges-theorem.html">Lagrange's Theorem</a></li>
+          <li><a href="section-fermat-euler.html" class="active">Fermat's and Euler's Theorems</a></li>
+          <li><a href="exercises-cosets.html">Exercises</a></li>
+          <li><a href="cosets-sage.html">Sage</a></li>
+          <li><a href="cosets-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="crypt.html"><span class="codenumber">7</span><span class="title">Introduction to Cryptography</span></a></h2>
+        <ul>
+          <li><a href="section-private-key-crypt.html">Private Key Cryptography</a></li>
+          <li><a href="section-public-key-crypt.html">Public Key Cryptography</a></li>
+          <li><a href="exercises-crypt.html">Exercises</a></li>
+          <li><a href="exercises-17.html">Additional Exercises: Primality and Factoring</a></li>
+          <li><a href="references-5.html">References and Suggested Readings</a></li>
+          <li><a href="crypt-sage.html">Sage</a></li>
+          <li><a href="crypt-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="algcodes.html"><span class="codenumber">8</span><span class="title">Algebraic Coding Theory</span></a></h2>
+        <ul>
+          <li><a href="section-error-detecting-correcting-codes.html">Error-Detecting and Correcting Codes</a></li>
+          <li><a href="section-linear-codes.html">Linear Codes</a></li>
+          <li><a href="section-parity-check.html">Parity-Check and Generator Matrices</a></li>
+          <li><a href="section-efficient-decoding.html">Efficient Decoding</a></li>
+          <li><a href="exercises-algcodes.html">Exercises</a></li>
+          <li><a href="exercises-20.html">Programming Exercises</a></li>
+          <li><a href="references-6.html">References and Suggested Readings</a></li>
+          <li><a href="algcodes-sage.html">Sage</a></li>
+          <li><a href="algcodes-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="isomorph.html"><span class="codenumber">9</span><span class="title">Isomorphisms</span></a></h2>
+        <ul>
+          <li><a href="section-isomorph-definitions.html">Definition and Examples</a></li>
+          <li><a href="section-direct-products.html">Direct Products</a></li>
+          <li><a href="exercises-isomorph.html">Exercises</a></li>
+          <li><a href="isomorph-sage.html">Sage</a></li>
+          <li><a href="isomorph-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="normal.html"><span class="codenumber">10</span><span class="title">Normal Subgroups and Factor Groups</span></a></h2>
+        <ul>
+          <li><a href="section-factor-groups.html">Factor Groups and Normal Subgroups</a></li>
+          <li><a href="section-simplicity-of-an.html">The Simplicity of the Alternating Group</a></li>
+          <li><a href="exercises-normal.html">Exercises</a></li>
+          <li><a href="normal-sage.html">Sage</a></li>
+          <li><a href="normal-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="homomorph.html"><span class="codenumber">11</span><span class="title">Homomorphisms</span></a></h2>
+        <ul>
+          <li><a href="section-group-homomorphisms.html">Group Homomorphisms</a></li>
+          <li><a href="section-group-isomorphism-theorems.html">The Isomorphism Theorems</a></li>
+          <li><a href="exercises-homomorph.html">Exercises</a></li>
+          <li><a href="exercises-27.html">Additional Exercises: Automorphisms</a></li>
+          <li><a href="homomorph-sage.html">Sage</a></li>
+          <li><a href="homomorph-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="matrix.html"><span class="codenumber">12</span><span class="title">Matrix Groups and Symmetry</span></a></h2>
+        <ul>
+          <li><a href="section-matrix-groups.html">Matrix Groups</a></li>
+          <li><a href="section-symmetry.html">Symmetry</a></li>
+          <li><a href="exercises-matrix.html">Exercises</a></li>
+          <li><a href="references-7.html">References and Suggested Readings</a></li>
+          <li><a href="matrix-sage.html">Sage</a></li>
+          <li><a href="matrix-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="struct.html"><span class="codenumber">13</span><span class="title">The Structure of  Groups</span></a></h2>
+        <ul>
+          <li><a href="section-finite-abelian-groups.html">Finite Abelian Groups</a></li>
+          <li><a href="section-solvable-groups.html">Solvable Groups</a></li>
+          <li><a href="exercises-struct.html">Exercises</a></li>
+          <li><a href="exercises-32.html">Programming Exercises</a></li>
+          <li><a href="references-8.html">References and Suggested Readings</a></li>
+          <li><a href="struct-sage.html">Sage</a></li>
+          <li><a href="struct-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="actions.html"><span class="codenumber">14</span><span class="title">Group Actions</span></a></h2>
+        <ul>
+          <li><a href="section-groups-acting-on-sets.html">Groups Acting on Sets</a></li>
+          <li><a href="section-class-equation.html">The Class Equation</a></li>
+          <li><a href="section-burnsides-counting-theorem.html">Burnside's Counting Theorem</a></li>
+          <li><a href="exercises-actions.html">Exercises</a></li>
+          <li><a href="exercises-35.html">Programming Exercise</a></li>
+          <li><a href="references-9.html">References and Suggested Reading</a></li>
+          <li><a href="actions-sage.html">Sage</a></li>
+          <li><a href="actions-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="sylow.html"><span class="codenumber">15</span><span class="title">The Sylow Theorems</span></a></h2>
+        <ul>
+          <li><a href="section-sylow-theorems.html">The Sylow Theorems</a></li>
+          <li><a href="section-sylow-applications.html">Examples and Applications</a></li>
+          <li><a href="exercises-sylow.html">Exercises</a></li>
+          <li><a href="exercises-38.html">A Project</a></li>
+          <li><a href="references-10.html">References and Suggested Readings</a></li>
+          <li><a href="sylow-sage.html">Sage</a></li>
+          <li><a href="sylow-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="rings.html"><span class="codenumber">16</span><span class="title">Rings</span></a></h2>
+        <ul>
+          <li><a href="section-rings-definitions.html">Rings</a></li>
+          <li><a href="section-domains-and-fields.html">Integral Domains and Fields</a></li>
+          <li><a href="section-ring-homomorphisms.html">Ring Homomorphisms and Ideals</a></li>
+          <li><a href="section-maximal-prime-ideals.html">Maximal and Prime Ideals</a></li>
+          <li><a href="section-software-application.html">An Application to Software Design</a></li>
+          <li><a href="exercises-rings.html">Exercises</a></li>
+          <li><a href="exercises-41.html">Programming Exercise</a></li>
+          <li><a href="references-11.html">References and Suggested Readings</a></li>
+          <li><a href="rings-sage.html">Sage</a></li>
+          <li><a href="rings-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="poly.html"><span class="codenumber">17</span><span class="title">Polynomials</span></a></h2>
+        <ul>
+          <li><a href="section-poly-rings.html">Polynomial Rings</a></li>
+          <li><a href="section-poly-division-algorithm.html">The Division Algorithm</a></li>
+          <li><a href="section-irreducible-poly.html">Irreducible Polynomials</a></li>
+          <li><a href="exercises-poly.html">Exercises</a></li>
+          <li><a href="exercises-44.html">Additional Exercises:  Solving the Cubic and Quartic Equations</a></li>
+          <li><a href="poly-sage.html">Sage</a></li>
+          <li><a href="poly-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="domains.html"><span class="codenumber">18</span><span class="title">Integral Domains</span></a></h2>
+        <ul>
+          <li><a href="section-field-of-fractions.html">Fields of Fractions</a></li>
+          <li><a href="section-factorization-domains.html">Factorization in Integral Domains</a></li>
+          <li><a href="exercises-domains.html">Exercises</a></li>
+          <li><a href="references-12.html">References and Suggested Readings</a></li>
+          <li><a href="domains-sage.html">Sage</a></li>
+          <li><a href="domains-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="boolean.html"><span class="codenumber">19</span><span class="title">Lattices and Boolean Algebras</span></a></h2>
+        <ul>
+          <li><a href="section-boolean-lattices.html">Lattices</a></li>
+          <li><a href="section-boolean-algebras.html">Boolean Algebras</a></li>
+          <li><a href="section-algebra-of-circuits.html">The Algebra of Electrical Circuits</a></li>
+          <li><a href="exercises-boolean.html">Exercises</a></li>
+          <li><a href="exercises-49.html">Programming Exercises</a></li>
+          <li><a href="references-13.html">References and Suggested Readings</a></li>
+          <li><a href="boolean-sage.html">Sage</a></li>
+          <li><a href="boolean-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="vect.html"><span class="codenumber">20</span><span class="title">Vector Spaces</span></a></h2>
+        <ul>
+          <li><a href="section-vect-definitions-and-examples.html">Definitions and Examples</a></li>
+          <li><a href="section-subspaces.html">Subspaces</a></li>
+          <li><a href="section-linear-independence.html">Linear Independence</a></li>
+          <li><a href="exercises-vect.html">Exercises</a></li>
+          <li><a href="references-14.html">References and Suggested Readings</a></li>
+          <li><a href="vect-sage.html">Sage</a></li>
+          <li><a href="vect-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="fields.html"><span class="codenumber">21</span><span class="title">Fields</span></a></h2>
+        <ul>
+          <li><a href="section-extension-fields.html">Extension Fields</a></li>
+          <li><a href="section-splitting-fields.html">Splitting Fields</a></li>
+          <li><a href="section-constructions.html">Geometric Constructions</a></li>
+          <li><a href="exercises-fields.html">Exercises</a></li>
+          <li><a href="references-15.html">References and Suggested Readings</a></li>
+          <li><a href="fields-sage.html">Sage</a></li>
+          <li><a href="fields-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="finite.html"><span class="codenumber">22</span><span class="title">Finite Fields</span></a></h2>
+        <ul>
+          <li><a href="section-finite-field.html">Structure of a Finite Field</a></li>
+          <li><a href="section-poly-codes.html">Polynomial Codes</a></li>
+          <li><a href="exercises-finite.html">Exercises</a></li>
+          <li><a href="exercises-56.html">Additional Exercises: Error Correction for <abbr class="acronym"><!--Style me-->BCH</abbr> Codes</a></li>
+          <li><a href="references-16.html">References and Suggested Readings</a></li>
+          <li><a href="finite-sage.html">Sage</a></li>
+          <li><a href="finite-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="galois.html"><span class="codenumber">23</span><span class="title">Galois Theory</span></a></h2>
+        <ul>
+          <li><a href="section-field-automorphisms.html">Field Automorphisms</a></li>
+          <li><a href="section-fund-theorem-galois-theory.html">The Fundamental Theorem</a></li>
+          <li><a href="section-galois-applications.html">Applications</a></li>
+          <li><a href="exercises-galois.html">Exercises</a></li>
+          <li><a href="references-17.html">References and Suggested Readings</a></li>
+          <li><a href="galois-sage.html">Sage</a></li>
+          <li><a href="galois-sage-exercises.html">Sage Exercises</a></li>
+        </ul>
+        <h2 class="link"><a href="gfdl.html"><span class="codenumber">A</span><span class="title">GNU Free Documentation License</span></a></h2>
+        <ul></ul>
+        <h2 class="link"><a href="backmatter.html"><span class="title">Reference</span></a></h2>
+        <ul>
+          <li><a href="chapter-24.html">Hints and Solutions to Selected Exercises</a></li>
+          <li><a href="chapter-25.html">Notation</a></li>
+        </ul></nav><div class="extras"><nav><a class="mathbook-link" href="http://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+      </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-fermat-euler"><header><h1 class="heading" alt="Section 6.3 Fermat's and Euler's Theorems" title="Section 6.3 Fermat's and Euler's Theorems">
+    <span class="type">Section</span><span class="codenumber">6.3</span><span class="title">Fermat's and Euler's Theorems</span>
+    </h1></header><article class="introduction" id="introduction-23"><h5 class="heading"></h5>
+    <p>The <em class="terminology">Euler</em> \(\phi\)-<em class="terminology">function</em> is the map \(\phi : {\mathbb N } \rightarrow {\mathbb N}\) defined by \(\phi(n) = 1\) for \(n=1\), and, for \(n \gt 1\),  \(\phi(n)\) is the number of positive integers \(m\) with \(1 \leq m \lt n\) and \(\gcd(m,n) = 1\).</p>
+    <p>From Proposition <a knowl="./knowl/proposition-zn-equiv-classes.html" knowl-id="xref-proposition-zn-equiv-classes" alt="Proposition 3.4 " title="Proposition 3.4 ">3.4</a>, we know that the order of \(U(n)\), the group of units in \({\mathbb Z}_n\), is \(\phi(n)\). For example, \(|U(12)| = \phi(12)  = 4\) since the numbers that are relatively prime to 12 are 1, 5, 7, and 11. For any prime \(p\), \(\phi(p) = p-1\).  We state these results in the following theorem.</p>
+    <article class="theorem-like" id="theorem-cosets-theorem-11"><h5 class="heading">
+      <span class="type">Theorem</span><span class="codenumber">6.17</span>
+      </h5>
+      <p>Let \(U(n)\) be the group of units in \({\mathbb Z}_n\).  Then \(|U(n)| = \phi(n)\).</p></article><p>The following theorem is an important result in number theory, due to Leonhard Euler.</p>
+    <article class="theorem-like" id="theorem-eulers_theorem"><h5 class="heading">
+      <span class="type">Theorem</span><span class="codenumber">6.18</span><span class="title">Euler's Theorem</span>
+      </h5>
+      <p>Let \(a\) and \(n\) be integers such that \(n \gt 0\) and \(\gcd(a, n) = 1\).  Then \(a^{\phi(n)} \equiv 1 \pmod{n}\).</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-proof-44" id="proof-44"><article class="hiddenproof"><h5 class="heading"><span class="type">Proof</span></h5></article></a></div>
+    <div id="hk-proof-44" style="display: none;" class="tex2jax_ignore"><article class="hiddenproof"><p>By Theorem <a knowl="./knowl/theorem-cosets-theorem-11.html" knowl-id="xref-theorem-cosets-theorem-11" alt="Theorem 6.17 " title="Theorem 6.17 ">6.17</a> the order of \(U(n)\) is \(\phi(n)\).  Consequently, \(a^{\phi(n)} = 1\) for all \(a \in U(n)\); or \(a^{\phi(n)} - 1\) is divisible by \(n\).  Therefore, \(a^{\phi(n)} \equiv 1 \pmod{n}\).</p></article></div>
+    <p>If we consider the special case of Euler's Theorem in which \(n = p\) is prime and recall that \(\phi(p) = p - 1\), we obtain the following result, due to Pierre de Fermat.</p>
+    <article class="theorem-like" id="theorem-cosets-theorem-13"><h5 class="heading">
+      <span class="type">Theorem</span><span class="codenumber">6.19</span><span class="title">Fermat's Little Theorem</span>
+      </h5>
+      <p>Let \(p\) be any prime number and suppose that \(p \notdivide a\).  Then 
+        <span class="displaymath" id="me-213">\[a^{p-1} \equiv 1 \pmod{ p }.\]</span>
+        Furthermore, for any integer \(b\), \(b^p \equiv b \pmod{ p}\).</p></article></article><section class="subsection" id="subsection-43"><header><h1 class="heading hide-type">
+    <span class="type">Subsection</span><span class="codenumber"></span><span class="title">Historical Note</span>
+    </h1></header><p>Joseph-Louis Lagrange (1736–1813), born in Turin, Italy, was of French and Italian descent.  His talent for mathematics became apparent at an early age.  Leonhard Euler recognized Lagrange's abilities when Lagrange, who was only 19, communicated to Euler some work that he had done in the calculus of variations.  That year he was also named a professor at the Royal Artillery School in Turin.  At the age of 23 he joined the Berlin Academy. Frederick the Great had written to Lagrange proclaiming that the “greatest king in Europe” should have the “greatest mathematician in Europe” at his court.  For 20 years Lagrange held the position vacated by his mentor, Euler.  His works include contributions to number theory, group theory, physics and mechanics, the calculus of variations, the theory of equations, and differential equations.  Along with Laplace and Lavoisier, Lagrange was one of the people responsible for designing the metric system.  During his life Lagrange profoundly influenced the development of mathematics, leaving much to the next generation of mathematicians in the form of examples and new problems to be solved.</p></section></section></div></main>
+    </div>
+    <!--Start: StatCounter code--><script type="text/javascript">
+    var sc_project=10568106;
+    var sc_invisible=1;
+    var sc_security="510ba080";
+    var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+    </script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10568106/0/510ba080/1/" alt="web analytics"></a></div></noscript>
+    <!--End: StatCounter code-->
+  </body>
+</html>
