@@ -29,6 +29,7 @@
   font-size: large;
 }
 .thm  {
+  display: inline;
   text-align:left;
   font-style: normal;
   text-decoration: underline;
