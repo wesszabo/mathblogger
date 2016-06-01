@@ -30,6 +30,7 @@
 }
 .thm  {
   display: inline;
+  margin-right: 5px;
   text-align:left;
   font-style: normal;
   text-decoration: underline;
