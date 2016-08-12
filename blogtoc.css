@@ -62,7 +62,7 @@ li input {
   position: absolute;
   left: 0;
   margin-left: 0;
-  margin-bottom: 5px;
+  padding-bottom: 5px !important;
   opacity: 0;
   z-index: 2;
   cursor: pointer;
