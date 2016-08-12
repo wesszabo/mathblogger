@@ -24,8 +24,8 @@ p {
   /* IE hack */
 }
 #body {
-  font-size: 1em;
-  /* Sets base font size to 16px */
+  font-size: 1.2em;
+  /* Sets base font size to 19px */
 }
 table {
   font-size: 100%;
