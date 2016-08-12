@@ -71,7 +71,7 @@ li input {
   top: 0;
 }
 li input + ol {
-  background: url(https://www.thecssninja.com/demo/css_tree/toggle-small-expand.png) 40px 0 no-repeat;
+  background: url(https://www.thecssninja.com/demo/css_tree/toggle-small-expand.png) 40px -3px no-repeat;
   margin: -0.938em 0 -5px -44px;
   /* 15px */
   height: 1em;
@@ -83,7 +83,7 @@ li input + ol > li {
 }
 
 li input:checked + ol {
-  background: url(https://www.thecssninja.com/demo/css_tree/toggle-small.png) 40px 5px no-repeat;
+  background: url(https://www.thecssninja.com/demo/css_tree/toggle-small.png) 40px -3px no-repeat;
   margin: -1.25em 0 -5px -44px;
   /* 20px */
   padding: 1.563em 0 0 80px;
