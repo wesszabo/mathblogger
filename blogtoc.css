@@ -11,6 +11,24 @@
   color: black;
   margin: 0; 
 }
+/* unvisited link */
+a:link {
+    color: #333399;
+}
+/* visited link */
+a:visited {
+    color: #337914;
+}
+/* mouse over link */
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+/* selected link */
+a:active {
+    color: yellow;
+    text-decoration: underline;
+}
 img {
   border: none;
 }
