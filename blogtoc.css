@@ -83,7 +83,7 @@ li input + ol > li {
 }
 
 li input:checked + ol {
-  background: url(https://www.thecssninja.com/demo/css_tree/toggle-small.png) 40px -3px no-repeat;
+  background: url(https://www.thecssninja.com/demo/css_tree/toggle-small.png) 40px -1px no-repeat;
   margin: -1.25em 0 -5px -44px;
   /* 20px */
   padding: 1.563em 0 0 80px;
