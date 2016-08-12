@@ -37,7 +37,6 @@ label {
 }
 input, select, textarea, th, td {
   font-size: 1em;
-   padding-bottom: 25px !important;
 }
 /* CSS Tree menu styles */
 ol.tree {
