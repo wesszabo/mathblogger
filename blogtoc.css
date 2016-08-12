@@ -1,12 +1,12 @@
 /* Just some base styles not needed for example to function */
-*, html {
+*, #html {
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-body, form, ul, li, p, h1, h2, h3, h4, h5 {
+#body, form, ul, li, p, h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
-body {
+#body {
   background-color: ivory; 
   color: black;
   margin: 0; 
@@ -18,20 +18,17 @@ p {
   font-size: 1em;
   margin: 0 0 1em 0;
 }
-html {
+#html {
   font-size: 100%;
   /* IE hack */
 }
-body {
+#body {
   font-size: 1em;
   /* Sets base font size to 16px */
 }
 table {
   font-size: 100%;
   /* IE hack */
-}
-#folder1 {
-  margin-bottom: 15px;
 }
 label {
   margin-top: 5px;
