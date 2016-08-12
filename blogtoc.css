@@ -30,6 +30,9 @@ table {
   font-size: 100%;
   /* IE hack */
 }
+#folder1 {
+  margin-bottom: 15px;
+}
 label {
   margin-top: 5px;
   margin-left: 15px;
