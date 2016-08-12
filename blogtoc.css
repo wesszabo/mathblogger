@@ -41,7 +41,7 @@ input, select, textarea, th, td {
 }
 /* CSS Tree menu styles */
 ol.tree {
-  padding: 0 0 0 30px;
+  padding: 0 0 0 10px;
   width: 300px;
 }
 li {
