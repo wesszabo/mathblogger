@@ -7,8 +7,8 @@ body, form, ul, li, p, h1, h2, h3, h4, h5 {
   padding: 0;
 }
 body {
-  background-color: ivory !important; 
- color: black;
+  background-color: ivory; 
+  color: black;
   margin: 0; 
 }
 img {
@@ -30,6 +30,11 @@ table {
   font-size: 100%;
   /* IE hack */
 }
+label {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-weight: bold;  
+}
 input, select, textarea, th, td {
   font-size: 1em;
 }
@@ -47,24 +52,12 @@ li.file {
   margin-left: -1px !important;
 }
 li.file a {
-  background: url(https://www.thecssninja.com/demo/css_tree/document.png) 0 0 no-repeat;
   color: black;
-  padding-left: 21px;
+  padding-left: 1px;
   text-decoration: none;
   display: block;
 }
-li.file a[href *='.pdf'] {
-  background: url(https://www.thecssninja.com/demo/css_tree/document.png) 0 0 no-repeat;
-}
-li.file a[href *='.html'] {
-  background: url(https://www.thecssninja.com/demo/css_tree/document.png) 0 0 no-repeat;
-}
-li.file a[href $='.css'] {
-  background: url(https://www.thecssninja.com/demo/css_tree/document.png) 0 0 no-repeat;
-}
-li.file a[href $='.js'] {
-  background: url(document.png) 0 0 no-repeat;
-}
+
 li input {
   position: absolute;
   left: 0;
@@ -87,12 +80,7 @@ li input + ol > li {
   margin-left: -14px !important;
   padding-left: 1px;
 }
-li label {
-  background: url(https://www.thecssninja.com/demo/css_tree/folder-horizontal.png) 15px 1px no-repeat;
-  cursor: pointer;
-  display: block;
-  padding-left: 37px;
-}
+
 li input:checked + ol {
   background: url(https://www.thecssninja.com/demo/css_tree/toggle-small.png) 40px 5px no-repeat;
   margin: -1.25em 0 0 -44px;
@@ -106,6 +94,6 @@ li input:checked + ol > li {
   /* 2px */
 }
 li input:checked + ol > li:last-child {
-  margin: 0 0 0.063em;
-  /* 1px */
+  margin: 0 0 0.63em;
+  /* 10px */
 }
