@@ -53,9 +53,7 @@ li.file {
   margin-left: -1px !important;
 }
 li.file a {
-  color: black;
   padding-left: 1px;
-  text-decoration: none;
   display: block;
 }
 
