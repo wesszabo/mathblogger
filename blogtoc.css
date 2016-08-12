@@ -13,7 +13,7 @@
 }
 /* unvisited link */
 a:link {
-    color: #333399;
+    color: blue /*#333399*/;
 }
 /* visited link */
 a:visited {
